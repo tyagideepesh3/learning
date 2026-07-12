@@ -21,11 +21,11 @@ function Row({ index, style, users }) {
 }
 // console.log(users);
 
-export function VirtualList() {
+export function VirtualListComponent() {
     const rowHeight = useDynamicRowHeight({defaultRowHeight: 180})
   return (
     <>
-      <h2>Virtual List</h2>
+      <h2>Virtual Lists</h2>
 
       <List
         rowComponent={Row}
