@@ -1,0 +1,28 @@
+export const users = Array.from({ length: 100000 }, (_, index) => ({
+  id: index + 1,
+  firstName: `Emily ${index + 1}`,
+  lastName: `Johnson ${index + 1}`,
+  maidenName: `Smith ${index + 1}`,
+  age: 28,
+  gender: "female",
+  email: `emily.johnson${index + 1}@x.dummyjson.com`,
+  phone: "+81 965-431-3024",
+  username: "emilys",
+  password: "emilyspass",
+  birthDate: "1996-5-30",
+  image: "...",
+  bloodGroup: "O-",
+  height: 193.24,
+  weight: 63.16,
+  eyeColor: "Green",
+  hair: {
+    color: "Brown",
+    type: "Curly",
+  },
+  ip: "42.48.100.32",
+  address: {
+    address: "626 Main Street",
+    city: "Phoenix",
+    state: "Mississippi",
+  },
+}));
