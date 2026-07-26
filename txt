@@ -1,1 +1,8 @@
-hlw
+Topics
+    1. call, bind, apply
+    2. caurrying
+    3. debouncing, throttling
+    4. polyfill
+    5. promise apis
+    6. this keyword
+    7. try catch outputs.
