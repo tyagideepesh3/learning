@@ -1,1 +1,5 @@
-hlw
+1. code about node worker thread
+2. worker_events
+3. worker_options_obj
+4. transfer_list
+5. message channel
