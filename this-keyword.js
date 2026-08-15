@@ -49,6 +49,7 @@ bindFunc();
 // arrow function do not provide their own this binding
 // it taked the value of enclosing lexical context
 // value of this keyword in taken from outer normal function
+// Arrow functions have lexical this, so call(), apply(), and bind() cannot override their this.
 
 const obj2 = {
   a: 10,
@@ -58,6 +59,20 @@ const obj2 = {
 };
 
 obj2.x();
+
+// const obj1 = {
+//     name: "Deep",
+
+//     sayHi: () => {
+//         console.log(this);
+//     }
+// };
+
+// const obj2 = {
+//     name: "Pradeep"
+// };
+
+// obj1.sayHi.call(obj2); // call() cannot change its this. undefined
 
 const obj3 = {
   a: 10,
