@@ -114,6 +114,31 @@ const obj6 = {
 };
 const y6 = obj6.x();
 // y6()
+// {...} does not create their own this keyword but function does
+const familyObj = {
+    name: "Deep",
+    age: 10,
+    sayHlw: function(){
+        console.log("sayHlw, ", this); // obj
+    },
+    sayHi: () => {
+        console.log("sayHi, ", this); // {}
+    },
+    parentObj: {
+        name: "Pradeep",
+        age: 40,
+        sayHlw: function(){
+            console.log("sayHlw parentObj, ", this); // parentObj
+        },
+        sayHi: () => {
+            console.log("sayHi parentObj, ", this);// {}
+        },
+    }
+}
+familyObj.sayHi();
+familyObj.sayHlw();
+familyObj.parentObj.sayHi();
+familyObj.parentObj.sayHlw();
 
 //  6.  this keyword inside a class
 
